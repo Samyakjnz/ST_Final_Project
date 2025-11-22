@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "mocha",
+  "mutate": [
+    "src/**/*.js"
+  ],
+  "mochaOptions": {
+    "spec": [
+      "test/**/*.test.js"
+    ]
+  },
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress"
+  ],
+  "tempDirName": "stryker-tmp",
+  "coverageAnalysis": "perTest"
+}
